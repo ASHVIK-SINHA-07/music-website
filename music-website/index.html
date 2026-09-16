@@ -4,21 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Website</title>
-    <link rel="stylesheet" href="assets/styesheets/style.css">
+    <title>Document</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Container for complete page -->
     <div id="container">
+
         <aside id="sidebar">
             <div class="logo">
                 <h1>
-                    <a href="#">Mosai<span c></span></a>
+                    <a href="#">
+                        Mosai<span>c</span>
+                    </a>
                 </h1>
             </div>
             <nav id="main-nav">
                 <ul>
-                    <li>
+                    <li class="active">
                         <a href="#">
                             <i class="fa-regular fa-house"></i>
                             <span>Home</span>
@@ -83,7 +94,7 @@
         </aside>
 
 
-        <section id="music-bar">
+        <header id="header">
             <div class="flex">
                 <div class="menu-btn">
                     <button>
@@ -96,22 +107,35 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
                     <div class="audio-player">
-                        <button><i class="fa-solid fa-backward"></i></button>
-                        <button><i class="fa-solid fa-forward"></i></button>
+                        <button>
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
 
                         <audio controls>
                             <source src="">
                         </audio>
                     </div>
+
                 </div>
                 <div class="login">
-                    <a href="#">Login</a>
+                    <a href="#">
+                        Login
+                    </a>
                 </div>
             </div>
-        </section>
+        </header>
+
     </div>
+
+
+    <!-- Main JS -->
     <script src="assets/javascripts/main.js"></script>
+    <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/7be6fc45fe.js" crossorigin="anonymous"></script>
 </body>
 
